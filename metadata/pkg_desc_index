@@ -1,9 +1,9 @@
+dev-embedded/vavrdisasm 9999: vAVRdisasm is an 8-bit Atmel AVR disassembler
 games-fps/gzdoom 9999: Enhanced OpenGL port of the official DOOM source code
 games-fps/zdoom 9999: Enhanced port of the official DOOM source code
 games-util/acc 9999: Action Code Script compiler for HeXen/ZDoom
 games-util/slade 9999: It's a Doom editor
 games-util/udmf-convert 9999: Converter for Doom and HeXen maps to UDMF
 games-util/zdbsp 9999: ZDoom BSP node builder
-net-libs/libpcap 1.4.0: A system-independent library for user-level network packet capture
 sci-electronics/gresistor2 9999: Translate a resistor color codes into readable value
 sci-electronics/kicad 9999: Electronic Schematic and PCB design tools.
