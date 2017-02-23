@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 
-EAPI=6
+EAPI=5
 
 CMAKE_MIN_VERSION=2.8
 inherit cmake-utils eutils git-r3
@@ -14,16 +14,19 @@ EGIT_REPO_URI="https://github.com/erincatto/Box2D.git"
 LICENSE="ZLIB"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE=""
+IUSE="-static"
 
 DEPEND="media-libs/freeglut
 	x11-libs/libXi"
 RDEPEND="${DEPEND}"
 
-S="${WORKDIR}/Box2D"
+S="${WORKDIR}/${PN}-${PV}/Box2D"
 
 src_configure()
 {
-    mycmakeargs="${mycmakeargs} -DBOX2D_BUILD_SHARED=ON"
+	local mycmakeargs=(
+                $(cmake-utils_useno static BOX2D_BUILD_SHARED)
+        )
+	
     cmake-utils_src_configure
 }
