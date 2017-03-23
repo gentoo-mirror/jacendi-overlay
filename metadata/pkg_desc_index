@@ -8,4 +8,3 @@ games-util/slade 9999: It's a Doom editor
 games-util/udmf-convert 9999: Converter for Doom and HeXen maps to UDMF
 games-util/zdbsp 9999: ZDoom BSP node builder
 sci-electronics/gresistor2 9999: Translate a resistor color codes into readable value
-sci-electronics/kicad 9999: Electronic Schematic and PCB design tools.
