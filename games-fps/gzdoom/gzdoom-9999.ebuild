@@ -13,7 +13,7 @@ EGIT_REPO_URI="https://github.com/coelckers/gzdoom.git"
 LICENSE="DOOMLIC BUILDLIC BSD"
 SLOT="0"
 KEYWORDS=""
-IUSE="cpu_flags_x86_mmx +gtk +fluidsynth +soundfont +opengl"
+IUSE="cpu_flags_x86_mmx +gtk3 +fluidsynth +soundfont"
 
 DEPEND="
 		soundfont? (
@@ -21,13 +21,12 @@ DEPEND="
 				media-sound/fluid-soundfont
 		)
 
-		gtk? ( x11-libs/gtk+:2 )
+		gtk3? ( x11-libs/gtk+:3 )
 		media-libs/flac
 		media-libs/openal
 		virtual/glu
 		virtual/jpeg
-		virtual/opengl
-		media-libs/libsdl2
+		media-libs/libsdl2[opengl]
 
 		cpu_flags_x86_mmx? ( || ( dev-lang/nasm dev-lang/yasm ) )"
 RDEPEND="${DEPEND}"
@@ -42,7 +41,7 @@ src_prepare() {
 src_configure() {
 	local mycmakeargs=(
 		$(cmake-utils_use_no cpu_flags_x86_mmx ASM)
-		$(cmake-utils_use_no gtk GTK)
+		$(cmake-utils_use_no gtk3 GTK)
 		$(cmake-utils_use_use fluidsynth FLUIDSYNTH)
 		-DNO_FMOD=ON
 	)
