@@ -1,6 +1,7 @@
 dev-embedded/simulavr 9999: A simulator for the Atmel AVR family of microcontrollers
 dev-embedded/vavrdisasm 9999: vAVRdisasm is an 8-bit Atmel AVR disassembler
 games-engines/box2d 9999: Box2D is a 2D rigid body simulation library for games
+games-fps/dhewm3 9999: A Doom 3 GPL source modification.
 games-fps/gzdoom 9999: Enhanced OpenGL port of the official DOOM source code
 games-util/acc 9999: Action Code Script compiler for HeXen/ZDoom
 games-util/slade 9999: It's a Doom editor
