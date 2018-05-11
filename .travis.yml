@@ -8,6 +8,9 @@ notifications:
     on_success: change  # options: [always|never|change] default: always
     on_failure: always  # options: [always|never|change] default: always
     on_start: false     # default: false
+addons:
+  apt:
+    update: true
 env:
     global:
         - PORTAGE_VER="2.3.16"
