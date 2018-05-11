@@ -1,0 +1,18 @@
+# Jacendi's overlay
+Various ebuilds, mostly idTech 1 related
+
+# How to use: 
+With layman:   
+```layman -f -o https://raw.githubusercontent.com/Jacendi/jacendi-overlay/master/repositories.xml -a jacendi-overlay```  
+or ```layman -a jacendi-overlay```
+
+With repos.conf:
+
+```[jacendi-overlay]```  
+```location = <your path>```  
+```sync-type = git```  
+```sync-uri = https://github.com/Jacendi/jacendi-overlay```  
+```auto-sync = true```
+
+# Repoman status
+[![Repoman Status](https://travis-ci.org/Jacendi/jacendi-overlay.svg?branch=master)](https://travis-ci.org/Jacendi/jacendi-overlay)
