@@ -1,9 +1,9 @@
-# Copyright 1999-2015 Gentoo Foundation
+# Copyright 1999-2018 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 
 EAPI=5
-inherit games git-2 eutils
+inherit git-r3 eutils
 
 DESCRIPTION="Converter for Doom and HeXen maps to UDMF"
 HOMEPAGE="http://github.com/CO2/UDMF-Convert"
@@ -22,7 +22,5 @@ src_prepare() {
 }
 
 src_install() {
-	dogamesbin *convert || die
-
-	prepgamesdirs
+	dobin *convert || die
 }
