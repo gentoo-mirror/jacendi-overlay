@@ -1,6 +1,5 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2018 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
 
 EAPI=6
 inherit eutils git-r3
@@ -14,5 +13,5 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 
 src_install() {
-    emake DESTDIR="${D}" install
+	emake DESTDIR="${D}" install
 }
