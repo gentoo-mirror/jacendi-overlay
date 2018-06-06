@@ -1,6 +1,4 @@
 # Jacendi's overlay
-[![Repoman Status](https://travis-ci.org/Jacendi/jacendi-overlay.svg?branch=master)](https://travis-ci.org/Jacendi/jacendi-overlay) [![License](http://img.shields.io/:license-gpl-green.svg)](https://tldrlegal.com/license/gnu-general-public-license-v2)  
-
 Various ebuilds, mostly idTech 1 related
 
 # How to use: 
