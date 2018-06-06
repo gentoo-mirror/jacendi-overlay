@@ -13,6 +13,3 @@ With repos.conf:
 ```sync-type = git```  
 ```sync-uri = https://github.com/Jacendi/jacendi-overlay```  
 ```auto-sync = true```
-
-# Repoman status
-[![Repoman Status](https://travis-ci.org/Jacendi/jacendi-overlay.svg?branch=master)](https://travis-ci.org/Jacendi/jacendi-overlay)
