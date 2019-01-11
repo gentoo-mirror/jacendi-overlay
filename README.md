@@ -1,15 +1,22 @@
-# Jacendi's overlay
-Various ebuilds, mostly idTech 1 related
+# Jacendi's overlay [![ebuilds 261](https://img.shields.io/badge/ebuilds-7-639ee5.svg)](https://bitbucket.org/jacendi/jacendi-overlay/)
+This is my personal Gentoo Linux overlay, which i use to maintain ebuilds for software that i'm interested in.
 
-# How to use: 
-With layman:   
-```layman -f -o https://raw.githubusercontent.com/Jacendi/jacendi-overlay/master/repositories.xml -a jacendi-overlay```  
-or ```layman -a jacendi-overlay```
+**Please note** that the ebuilds presented here are of experimental quality, so use it at your own risk and don't bite me if shit happens ;)
 
-With repos.conf:
+## How to add this overlay:
+You can create`/etc/portage/repos.conf/jacendi-overlay.conf` file with the following contents:  
 
-```[jacendi-overlay]```  
-```location = <your path>```  
-```sync-type = git```  
-```sync-uri = https://github.com/Jacendi/jacendi-overlay```  
-```auto-sync = true```
+
+```ini
+[jacendi-overlay]
+location = <your path>
+sync-type = git
+sync-uri = https://bitbucket.org/jacendi/jacendi-overlay
+auto-sync = true
+```
+and overlay will be added after tree sync.
+
+#### Also you can use [eselect-repository](https://wiki.gentoo.org/wiki/Eselect/Repository)
+```
+eselect repository enable jacendi-overlay
+```
