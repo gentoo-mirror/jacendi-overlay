@@ -3,7 +3,7 @@
 <pkgmetadata>
 	<longdescription lang="en">GZDoom adds an OpenGL renderer to the ZDoom source port.</longdescription>
 	<use>
-		<flag name="gtk3">Build graphical IWAD picker</flag>
+		<flag name="gtk">Build graphical IWAD picker</flag>
 		<flag name="openal">Enable <pkg>media-libs/openl</pkg> support</flag>
 		<flag name="kde">Use <pkg>kde-apps/kdialog</pkg> for IWAD picker</flag>
 		<flag name="system-jpeg">Use the system-wide <pkg>media-libs/libjpeg-turbo</pkg> instead of bundled.</flag>
