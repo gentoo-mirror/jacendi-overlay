@@ -1,0 +1,3 @@
+# Masking live version until upstream bug 
+# with building for POSIX targets is fixed
+=games-util/slade-9999
