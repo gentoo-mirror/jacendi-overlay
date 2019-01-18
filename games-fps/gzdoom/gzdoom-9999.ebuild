@@ -39,7 +39,7 @@ src_configure() {
 		-DFORCE_INTERNAL_BZIP2="$(usex system-bzip2)"
 		-DFORCE_INTERNAL_GME="$(usex system-gme)"
 		-DNO_OPENAL="$(usex !openal)"
-		-DNO_GTK="$(usex !gtk3)"
+		-DNO_GTK="$(usex !gtk)"
 	)
 
 	cmake-utils_src_configure
