@@ -5,11 +5,11 @@ EAPI=6
 
 WX_GTK_VER="3.0-gtk3"
 
-inherit cmake-utils wxwidgets git-r3
+inherit cmake-utils wxwidgets
 
 DESCRIPTION="It's a Doom editor"
 HOMEPAGE="http://slade.mancubus.net/"
-EGIT_REPO_URI="https://github.com/sirjuddington/SLADE.git"
+SRC_URI="https://github.com/sirjuddington/SLADE/archive/${PV}.tar.gz"
 
 LICENSE="GPL-2"
 SLOT="0"
@@ -29,6 +29,8 @@ RDEPEND="
 DEPEND="
 	${RDEPEND}
 	app-arch/zip"
+
+S="${WORKDIR}/SLADE-${PV}"
 
 src_prepare()
 {
@@ -50,7 +52,7 @@ src_configure() {
 
 src_install() {
 	# Binary. (Why such a weird directory? o.O)
-	dobin "${S}_build/${PN}" || die "Couldn't install the binary!"
+	dobin "${WORKDIR}/${P}_build/${PN}" || die "Couldn't install the binary!"
 
 	# Create and install slade.pk3.
 	cd "${S}/dist/res"
