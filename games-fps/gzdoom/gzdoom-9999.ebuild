@@ -33,11 +33,11 @@ DEPEND="${RDEPEND}"
 
 src_configure() {
 	local mycmakeargs=(
-		-DFORCE_INTERNAL_ASMJIT="$(usex system-asmjit)"
-		-DFORCE_INTERNAL_ZLIB="$(usex system-zlib)"
-		-DFORCE_INTERNAL_JPEG="$(usex system-jpeg)"
-		-DFORCE_INTERNAL_BZIP2="$(usex system-bzip2)"
-		-DFORCE_INTERNAL_GME="$(usex system-gme)"
+		-DFORCE_INTERNAL_ASMJIT="$(usex !system-asmjit)"
+		-DFORCE_INTERNAL_ZLIB="$(usex !system-zlib)"
+		-DFORCE_INTERNAL_JPEG="$(usex !system-jpeg)"
+		-DFORCE_INTERNAL_BZIP2="$(usex !system-bzip2)"
+		-DFORCE_INTERNAL_GME="$(usex !system-gme)"
 		-DNO_OPENAL="$(usex !openal)"
 		-DNO_GTK="$(usex !gtk)"
 	)
