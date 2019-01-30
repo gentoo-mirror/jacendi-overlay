@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<!-- maintainer-needed -->
+	<longdescription lang="en">
+	EntityX is an EC system that uses C++11 features to provide type-safe component management, event delivery, etc. 
+	It was built during the creation of a 2D space shooter.
+	</longdescription>
+	<upstream>
+		<remote-id type="github">alecthomas/entityx</remote-id>
+	</upstream>
+</pkgmetadata>
