@@ -1,4 +1,4 @@
-# Jacendi's overlay [![ebuilds 13](https://img.shields.io/badge/ebuilds-13-639ee5.svg)](https://bitbucket.org/jacendi/jacendi-overlay/)
+# Jacendi's overlay
 This is my personal Gentoo Linux overlay, which i use to maintain ebuilds for software that i'm interested in.
 
 **Please note** that the ebuilds presented here are of experimental quality, so use it at your own risk and don't bite me if shit happens ;)
