@@ -12,7 +12,7 @@ EGIT_REPO_URI="https://github.com/coelckers/gzdoom.git"
 LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE="gtk kde openal +system-zlib +system-jpeg +system-bzip2 +system-asmjit system-gme"
+IUSE="gtk kde openal +system-zlib +system-jpeg +system-bzip2 +system-asmjit system-gme vulkan"
 
 RDEPEND="
 	media-libs/libsdl2[opengl]
@@ -27,7 +27,7 @@ RDEPEND="
 	system-asmjit? ( dev-libs/asmjit )
 	gtk? ( x11-libs/gtk+:* )
 	kde? ( kde-apps/kdialog )
-	"
+	vulkan? ( media-libs/vulkan-loader dev-util/glslang )"
 
 DEPEND="${RDEPEND}"
 
@@ -38,6 +38,7 @@ src_configure() {
 		-DFORCE_INTERNAL_JPEG="$(usex !system-jpeg)"
 		-DFORCE_INTERNAL_BZIP2="$(usex !system-bzip2)"
 		-DFORCE_INTERNAL_GME="$(usex !system-gme)"
+		-DHAVE_VULKAN="$(usex !vulkan)"
 		-DNO_OPENAL="$(usex !openal)"
 		-DNO_GTK="$(usex !gtk)"
 	)
@@ -66,4 +67,11 @@ pkg_postinst() {
 	elog "To play, simply run:"
 	elog "   gzdoom"
 	elog "See /usr/share/doc/${P}/zdoom.txt.* for more info"
+
+	if use vulkan; then
+		elog "Warning: Vulkan renderer is currently experimental!"
+		elog "If you wanna enable it, use \"+vid_backend 0\" as command line"
+		elog "parameter, or enable it in the GZDoom's config file."
+		elog "Set this value to 1 if you wanna switch back to OpenGL renderer."
+	fi
 }
