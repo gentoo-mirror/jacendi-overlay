@@ -12,7 +12,7 @@ EGIT_REPO_URI="https://github.com/coelckers/gzdoom.git"
 LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE="gtk kde openal +system-zlib +system-jpeg +system-bzip2 +system-asmjit system-gme vulkan"
+IUSE="gtk kde openal +system-zlib +system-jpeg +system-bzip2 +system-asmjit system-gme vulkan openmp"
 
 RDEPEND="
 	media-libs/libsdl2[opengl]
@@ -41,6 +41,7 @@ src_configure() {
 		-DHAVE_VULKAN="$(usex !vulkan)"
 		-DNO_OPENAL="$(usex !openal)"
 		-DNO_GTK="$(usex !gtk)"
+		-DNO_OPENMP="$(usex !openmp)"
 	)
 
 	cmake-utils_src_configure

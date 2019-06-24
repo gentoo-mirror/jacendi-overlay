@@ -12,5 +12,6 @@
 		<flag name="system-gme">Use the system-wide <pkg>media-libs/game-music-emu</pkg> instead of bundled.</flag>
 		<flag name="system-asmjit">Use the system-wide <pkg>dev-libs/asmjit</pkg> instead of bundled.</flag>
 		<flag name="vulkan">Enable experimental Vulkan renderer</flag>
+		<flag name="openmp">Enable OpenMP support</flag>
 	</use>
 </pkgmetadata>
