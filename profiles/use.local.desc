@@ -2,3 +2,16 @@
 # Please add your descriptions to your package's metadata.xml ONLY.
 # * generated automatically using pmaint *
 
+games-fps/gzdoom:gtk - Build graphical IWAD picker
+games-fps/gzdoom:kde - Use kde-apps/kdialog for IWAD picker
+games-fps/gzdoom:openal - Enable media-libs/openl support
+games-fps/gzdoom:openmp - Enable OpenMP support
+games-fps/gzdoom:system-asmjit - Use the system-wide dev-libs/asmjit instead of bundled.
+games-fps/gzdoom:system-bzip2 - Use the system-wide app-arch/bzip2 instead of bundled.
+games-fps/gzdoom:system-gme - Use the system-wide media-libs/game-music-emu instead of bundled.
+games-fps/gzdoom:system-jpeg - Use the system-wide media-libs/libjpeg-turbo instead of bundled.
+games-fps/gzdoom:system-zlib - Use the system-wide sys-libs/zlib instead of bundled.
+games-fps/gzdoom:vulkan - Enable experimental Vulkan renderer
+games-util/slade:fluidsynth - Use media-sound/fluidsynth for MIDI playback
+games-util/slade:sfml-renderwindow - Use SFML RenderWindow for OpenGL displays
+games-util/slade:webkit - Use wxWebview for startpage and documentation
