@@ -7,6 +7,5 @@ games-util/acc 9999: Action Code Script compiler for HeXen/ZDoom
 games-util/slade 3.1.4 9999: It's a Doom editor
 games-util/udmf-convert 9999: Converter for Doom and HeXen maps to UDMF
 games-util/zdbsp 9999: ZDoom BSP node builder
-sci-electronics/gresistor2 9999: Translate a resistor color codes into readable value
 sys-apps/asus-wmi-sensors 9999: Linux ASUS WMI Sensor driver for Ryzen motherboards.
 sys-kernel/zen-sources 5.1.9999 5.2.9999: The Zen Kernel Live Sources
