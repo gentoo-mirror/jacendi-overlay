@@ -1,5 +1,4 @@
 dev-embedded/vavrdisasm 9999: vAVRdisasm is an 8-bit Atmel AVR disassembler
-dev-games/entityx 1.1.2: A fast, type-safe C++ Entity Component System
 games-fps/doomretro 9999: The classic, refined DOOM source port. For Windows PC.
 games-util/udmf-convert 9999: Converter for Doom and HeXen maps to UDMF
 games-util/zdbsp 9999: ZDoom BSP node builder
